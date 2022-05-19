@@ -3,7 +3,8 @@ $text = "Trentatre trentini andarono a Trento tutti e trentatre trotterellando";
 var_dump($text);
 var_dump(strlen($text));
 $censure = $_GET['censure'];
-var_dump(str_replace($censure, '***', $text));
+$censored_text = str_replace($censure, '***', $text);
+var_dump($censored_text, strlen($censored_text));
 ?>
 
 <!DOCTYPE html>
